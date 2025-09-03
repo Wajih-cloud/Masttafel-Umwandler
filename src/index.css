@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-inter bg-gray-100 text-gray-800;
+  }
+}
+
+@layer components {
+  .sidebar {
+    @apply fixed inset-y-0 left-0 w-64 bg-white shadow-lg transform transition-transform z-40;
+  }
+  .drawer {
+    @apply fixed inset-y-0 right-0 w-80 max-w-full bg-white shadow-lg transform transition-transform z-40;
+  }
+  .gradient-button {
+    @apply bg-gradient-to-r from-turquoise to-ocean text-white px-4 py-2 rounded shadow hover:shadow-lg;
+  }
+  .task-card {
+    @apply bg-white rounded-lg shadow p-4;
+  }
+}
